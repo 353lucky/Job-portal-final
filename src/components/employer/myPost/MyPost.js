@@ -38,7 +38,7 @@ function JobPostedByMe() {
                                  <p>CTC: {myjob.Salary}</p>
                                  <p>Eligibility: {myjob.Eligibility}</p>
                                  <p>Posted By: {myjob.Posted_by}</p>
-                                 <p>Location: {myjob.location}</p>
+                                 {/* <p>Location: {myjob.location}</p> */}
                                  <p></p>
                  </Col>
                  <Col>

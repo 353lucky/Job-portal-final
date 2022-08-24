@@ -30,16 +30,16 @@ export function AuthProvider({ children }) {
         await addDoc(userCollectionRef, { email: em, type: type })
         setUpdateUseEffect(!updateUseEffect);
     }
-    const deleteUserType = async () => {
-        const x = userRoleList.filter((u) => {
-            return u.email === currentUser.email;
-        })
-        console.log("Type of Deleted Id ", typeof (x[0].id));
-        console.log("Deleted Id", x[0].id);
-        const userDoc = doc(db, "usertype", x[0].id)
-        await deleteDoc(userDoc);
-        setUpdateUseEffect(!updateUseEffect)
-    }
+    // const deleteUserType = async () => {
+    //     const x = userRoleList.filter((u) => {
+    //         return u.email === currentUser.email;
+    //     })
+    //     console.log("Type of Deleted Id ", typeof (x[0].id));
+    //     console.log("Deleted Id", x[0].id);
+    //     const userDoc = doc(db, "usertype", x[0].id)
+    //     await deleteDoc(userDoc);
+    //     setUpdateUseEffect(!updateUseEffect)
+    // }
     function signup(email, password) {
         //createUser(email);
         return auth.createUserWithEmailAndPassword(email, password);
@@ -58,22 +58,22 @@ export function AuthProvider({ children }) {
     function resetPassword(email) {
         return auth.sendPasswordResetEmail(email)
     }
-    function updateEmail(email) {
+    // function updateEmail(email) {
 
-        return currentUser.updateEmail(email);
-    }
-    function updatePassword(password) {
-        return currentUser.updatePassword(password);
-    }
-    function deleteUser() {
-        // const x = userRoleList.filter((u) => {
-        //     return u.email == currentUser.email;
-        //   })
-        //   deleteUserType(x[0].id);
-        setType("-1")
-        return auth.currentUser.delete();
+    //     return currentUser.updateEmail(email);
+    // }
+    // function updatePassword(password) {
+    //     return currentUser.updatePassword(password);
+    // }
+    // function deleteUser() {
+    //     // const x = userRoleList.filter((u) => {
+    //     //     return u.email == currentUser.email;
+    //     //   })
+    //     //   deleteUserType(x[0].id);
+    //     setType("-1")
+    //     return auth.currentUser.delete();
 
-    }
+    // }
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((user) => {
             setLoading(false)
@@ -89,15 +89,15 @@ export function AuthProvider({ children }) {
         login,
         logout,
         resetPassword,
-        updateEmail,
-        updatePassword,
-        deleteUser,
+        // updateEmail,
+        // updatePassword,
+        // deleteUser,
         setType,
         type,
         userRoleList,
         userCollectionRef,
         createUser,
-        deleteUserType,
+        // deleteUserType,
         updateUseEffect,
         setUpdateUseEffect,
         createJobSeeker,
