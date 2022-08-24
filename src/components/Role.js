@@ -5,11 +5,11 @@ function Role() {
     const {type}=useAuth();
     if(type=="0")
     {
-        return <Navigate to="/JobSeeker"/>
+        return <Navigate to="/"/>
     }
     else if(type=="1")
     {
-        return <Navigate to="/Employer"/>
+        return <Navigate to="/"/>
     }
     else
     {

@@ -1,37 +1,4 @@
-#bgset
-{
-    background-color: orangered;
-}
-#bgsetl
-{
-    background-color: orangered;
-    color:white;
-}
-#main
-{
-    background-color:white;
-}
-#tc
-{
-    color:white;
-}
 
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto+Condensed:ital,wght@1,300&display=swap');
-
-body{
-    font-family: "Roboto Condensed" sans-serif;
-    overflow-x: hidden;
-}
-
-:root{
-    --primary-white:#fff;
-    --primary-orange:#f9ab00;
-    --primary-dark:rgba(255,255,255,0);
-    --primary-red:#ef4035;
-    --primary-hover-re:#f33501;
-    --primary-green:green;
-}
 
 
 
@@ -46,111 +13,8 @@ nav ul li{
     text-transform: uppercase;
 }
 
-.navbar-nav > li > a{
-    margin-right: 0.075rem;
-    margin-left: 0.75rem;
-    border-top: 0.1167 solid var(--primary-dark);
-    color:var(--primary-white) !important;
-    /* width:100%; */
-    overflow: hidden;
-
-    
-
-}
-
-.navbar-brand{
-    /* max-width: 17rem;
-    padding: 0 !important;
-    height: 3rem; */
-    font-size: 1.5rem;
-    color:red;
-    /* background-color: #ef4035; */
-    font-family: 'Dancing Script', cursive;
-    float: left;
-
-}
-
-.nav-link:hover{
-    color: red;
-    transition: 0.3s;
-    float: left;
-}
-.nav-item{
-    font-weight: 100;
-    padding-left: 2rem;
-}
-
-.btn1{
-    height:2.5rem;
-    width: 6rem;
-    border: none;
-    outline: none;
-    transition:all 0.4s;
-    color: white;
-    cursor: pointer;
-    background-color: rgba(248,83,83);
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
-}
 
 
-.navbar-nav > li > a.active, .navbar-nav > li > a:active:focus{ 
-border-top: 0.1167rem solid var(--primary-orange);
-
-}
-
-.navbar-nav > li > a:hover{
-    border-top: 0.1167rem solid var(--primary-orange);
-}
-
-.header-wrapper{
-    position: relative;
-    background:url(about.png) no-repeat;
-    background-size:cover ;
-    min-height: 10vh;
-    width:100%;
-    background-position:center ;
-    background-position-x: left;
-    height: 140vh;
-}
-
-
-.main-info{
-    display: flex;
-    /* position: absolute; */
-    /* top:0;
-    left:0;
-    right:0;
-    bottom:0; */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.typed-text{
-    font-size: 2rem;
-    color:var(--primary-orange);
-}
-
-
-.btn-main-offer{
-    border:2px solid var(--primary-red);
-    text-transform: uppercase;
-    border-radius: 0;
-    padding:0.625rem 0.60rem 0.60rem 0.70rem;
-    color:var(--primary-green);
-    margin:2rem;
-}
-
-
-/* .tsparticles-canvas-el{
-    position: absolute;
-    height:100vh;
-    width:100vw;
-    z-index:1;
-
-} */
 
 #container{
 margin-top: 6rem;
@@ -159,15 +23,6 @@ margin-left: 20rem;
 }
 
 
-.red{
-    color: #ef4035;
-
-}
-
-.ceta h2{
-    color: rgb(7,7,7);
-    font-size: 3rem;
-}
 
 .homebackground {
     background-image: url(/src/images/image27.jpg);
@@ -179,10 +34,7 @@ margin-left: 20rem;
     /* width: 800px;
     height: 300px; */
   }
-  /* 
-  .right{
-    background-image: url(/src/images/bg3.jpg);
-  } */
+ 
   
   .big-text{
     font-size: 50px;
@@ -209,11 +61,50 @@ margin-left: 20rem;
 
 .loginbackground {
     background-image: url(/src/images/background.jpg);
+    /* background-color: rgb(238, 247, 247); */
     width:100%;
-      /* height:768px; */
+      height:768px;
       position: relative;
       background-repeat: no-repeat;
       background-size: cover;
     /* width: 800px;
     height: 300px; */
+  }
+
+  .font-size-11 {
+    font-size: 3.75rem;
+    line-height: 1.2;
+    letter-spacing: -0.9px;
+    color: rgb(29, 95, 150);
+    margin-right: 30%;
+}
+
+.text-color{
+    color: rgb(29, 95, 150);
+}
+
+.font-size-9 {
+    font-size: 2.5rem;
+    line-height: 1.375;
+    letter-spacing: -0.4px;
+}
+
+.font-size-4 {
+    font-size: 1rem;
+    line-height: 1.625;
+    letter-spacing: -0.08px;
+}
+
+.jumbotron {
+  background: #358CCE;
+  color: #FFF;
+  border-radius: 0px;
+  }
+  .jumbotron-sm { padding-top: 24px;
+  padding-bottom: 24px; }
+  .jumbotron small {
+  color: #FFF;
+  }
+  .h1 small {
+  font-size: 24px;
   }
