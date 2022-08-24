@@ -1,5 +1,4 @@
 import Signup from './signup/Signup'
-import {Container} from 'react-bootstrap'
 import {AuthProvider}  from '../contexts/AuthContext'
 import {DataProvider}  from '../contexts/DataContext'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
@@ -15,7 +14,7 @@ import './App.css'
 
 import Profile from './employer/profile/Profile'
 import Navbar from './navbar/Navbar'
-import Header from './About'
+import About from './about/About' 
 import Home from './home/Home'
 import Footer from './footer/Footer'
 
@@ -38,7 +37,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/signup" element={<Signup/>} />
           <Route path="/login" element={<Login/>} />
-          <Route path="/Header" element={<Header/>}/>
+          <Route path="/about" element={<About/>}/>
           <Route path="/Contact" element={<ContactUs/>}/>
           
           <Route path='/Role' element={<Role/>}/>

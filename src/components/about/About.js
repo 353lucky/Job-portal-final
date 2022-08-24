@@ -1,7 +1,7 @@
 import React from "react"
 import Typed from "react-typed";
 
-const Header = () => {
+const About = () => {
     
   return (
 <>
@@ -37,4 +37,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default About

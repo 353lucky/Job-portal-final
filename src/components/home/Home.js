@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Header from '../About';
+import About from '../about/About';
 import { Link} from "react-router-dom";
 import JobSeekerViewJobs from '../jobSeeker/viewJobs/ViewJobs';
 
@@ -108,7 +108,7 @@ export default function Home() {
           </div>
          
         </div>
-      <Header/>
+      <About/>
       </>}
 
        

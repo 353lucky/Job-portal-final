@@ -52,7 +52,7 @@ function Header() {
           <a className="nav-link active" aria-current="page" >Home</a>
         </li>
       </Link>
-    <Link to='/Header' style={{textDecoration:"none"}}>
+    <Link to='/about' style={{textDecoration:"none"}}>
         <li className="nav-item">
           <a className="nav-link active" >About</a>
         </li>
@@ -107,7 +107,7 @@ function Header() {
           <a className="nav-link active" aria-current="page">Home</a>
         </li>
       </Link>
-    <Link to='/Header' style={{textDecoration:"none"}}>
+    <Link to='/about' style={{textDecoration:"none"}}>
         <li className="nav-item">
           <a className="nav-link active" >About</a>
         </li>
