@@ -48,7 +48,8 @@ function Signup() {
             catch (err) {
                 console.log(err);
             }
-            navigate("/Role", { replace: true });
+            // navigate("/Role", { replace: true });
+            navigate('/');
         }
         catch {
             setError('Failed To Create An Account');

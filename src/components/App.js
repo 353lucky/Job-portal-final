@@ -4,9 +4,7 @@ import {DataProvider}  from '../contexts/DataContext'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 import Login from './login/Login'
-// import PrivateRoute from './PrivateRoute';
 import ForgotPassword from './ForgotPassword'
-import Role from './Role';
 
 import PostJob from './employer/PostJob'
 import './App.css'
@@ -40,7 +38,6 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/Contact" element={<ContactUs/>}/>
           
-          <Route path='/Role' element={<Role/>}/>
           <Route path="/forgot-password" element={<ForgotPassword/>} />
          
           <Route path="/PostJob" element={<PostJob/>}/>

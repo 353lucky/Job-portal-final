@@ -28,7 +28,7 @@ function Login() {
             catch{
                 console.log("Login to ho gya magar id match nhin hui")
             }
-            navigate('/Role');
+            navigate('/');
 
         }
         catch {
