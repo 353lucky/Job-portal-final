@@ -35,8 +35,8 @@ function JobSeekerViewJobs() {
                                     <p>CTC: {job.Salary}</p>
                                     <p>Eligibility: {job.Eligibility}</p>
                                     <p>Posted By: {job.Posted_by}</p>
-                                    <p>Location: {job.location}</p>
-                                    <p></p>
+                                    {/* <p>Location: {job.location}</p> */}
+                                    {/* <p></p> */}
                     </Col>
                     <Col>
                     <button className = "btn btn-success" onClick={() => {
